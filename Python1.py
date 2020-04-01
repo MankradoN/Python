@@ -64,11 +64,71 @@ b=input("Give me a number: )
 ans=float(a)*float(b)
 print("The answer as a decimal is",float(ans))
 print("The answer as a decimal is",int(ans))
-"""
+
+
+                        #Method 1
 a= input("Give me 3 animals")
 b= input()
 c= input()
 
 ans=[a,b,c]
 ans.sort()
-print(str(ans))
+#print(list(ans))
+
+for a in ans:
+    print (a)
+
+
+dictionary={ "Child1":{"name":"Naomi","age":21,"ethnicity":"Ghanaian"},\
+   "Child2":{"name":"Solomon","age":23,"ethnicity":"Ghanaian"},\
+   "Child3":{"name":"Gloria","age":20,"ethnicity":"Ghanaian"}
+}
+print(dictionary["Child3"])
+
+a= "Hello world"
+"".join(a)
+print(a)
+"""
+
+Yellow_pages={'1':{"Name1","number"},\
+              '2':{"Name2","number"},\
+              '3':{"Name3","number"},\
+              '4':{"Name4","number"},\
+              '5':{"Name5","number"},\
+              '6':{"Name6","number"},\
+              '7':{"Name7","number"},\
+              '8':{"Name8","number"},\
+              '9':{"Name9","number"},\
+              '10':{"Name10","number"}
+              }
+
+# A=Yellow_pages.get('1'),Yellow_pages.get('3'),Yellow_pages.get('5'),Yellow_pages.get('7'),Yellow_pages.get('9'))
+# B=Yellow_pages.get('10'),Yellow_pages.get('9'),Yellow_pages.get('8'),Yellow_pages.get('7'),Yellow_pages.get('6'),Yellow_pages.get('5'))
+
+                            
+A=list(Yellow_pages.values())
+x=0
+C=[]
+'''
+# Function below iterates through only one -CORRECT
+for a in A:
+    if x % 2 == 0:
+        C.append(A[x])
+        x +=1
+
+D= A[:6]
+
+print (C)
+print (D)
+'''
+new_YP=[]
+new1_YP=[]
+P=",".join(map(str,Yellow_pages))])
+p.replace("'"," ")
+print(p)
+'''for x,y in Yellow_pages.items():
+    n =[",".join(map( str ,Yellow_pages.keys()))]
+    if n % 2 == 0:
+      new_YP.append(Yellow_pages.values())
+print(new_YP)    
+   '''           
